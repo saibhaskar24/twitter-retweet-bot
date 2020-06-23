@@ -1,7 +1,7 @@
-from selenium import webdriver 
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver import ActionChains
+# from selenium import webdriver 
+# from selenium.webdriver.chrome.options import Options
+# from selenium.webdriver.common.keys import Keys
+# from selenium.webdriver import ActionChains
 import pyautogui
 import time
 
@@ -13,11 +13,12 @@ import time
 # browser.get(url)
 # print("Done")
 while True:
-		if pyautogui.locateCenterOnScreen('rt.PNG', confidence=0.5): 
-			pyautogui.click(pyautogui.locateCenterOnScreen('rt.PNG'),duration=1)
+		if pyautogui.locateCenterOnScreen('rt.PNG', confidence=0.7): 
+			pyautogui.click(pyautogui.locateCenterOnScreen('rt.PNG', confidence=0.7),duration=1)
+			pyautogui.scroll(-25)
 		else:
-			pyautogui.moveTo(650,150)
-			pyautogui.scroll(-25)#scroll down
+			# pyautogui.moveTo(650,150)
+			pyautogui.scroll(-300)#scroll down
 			time.sleep(1)
 
 
